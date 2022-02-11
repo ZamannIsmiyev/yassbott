@@ -1,2 +1,2 @@
 node index
-resume
+pause
