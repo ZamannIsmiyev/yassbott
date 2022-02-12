@@ -19,19 +19,19 @@ const createGameState = chatId => {
 }
 const getGreetMessage = isGroup =>
 	trueTrim(`
-	👋 Salam. Я — бот для игры в «угадай возраст» в групповых чатах.
+	👋 Salam. Mən qrup çatlarında "yaşı təxmin et" oynamaq üçün bir robotam
 
-	📋 Правила просты: я кидаю вам фото человека, а ваша задача угадать его возраст. Чем точнее вы отвечаете, тем меньше баллов теряете.
-	${isGroup ? "" : "\n😉 Для начала, добавь меня в чат и вызови /game.\n"}
-	*Команды*
-	/game - 🕹 Новая игра
-	/stop - 🛑 Остановить игру
-	/top - 🔝 Рейтинг игроков чата
-	/chart - 🌎 Глобальный рейтинг
-	/donate - 💸 Поддержать проект
+	📋 Qaydalar sadədir: mən sizə bir insanın şəklini atıram və sizin vəzifəniz onun yaşını təxmin etməkdir. Nə qədər dəqiq cavab versəniz, bir o qədər az xal itirirsiniz.
+	${isGroup ? "" : "\n😉 Əvvəlcə məni söhbətə əlavə edin və Adminlik Hüquqlarımı verin  /game.\n"}
+	*Əmrlər*
+	/game - 🕹 Yeni Oyun
+	/stop - 🛑 Oyunu Dayandır
+	/top - 🔝 Çat Reyting 
+	/chart - 🌎 Qlobal Reyting
+	/donate - 💸 Qurucuya Dəsdək
 
-	Автор: @mikhailsdv
-	Мой канал: @FilteredInternet
+	müəllif: @shakoHSYNVH
+	Rəsmi Kanal: @@cguessgame
 `)
 const getRandomPerson = () => {
 	let imagePath = "./photos"
@@ -96,14 +96,14 @@ const stopGame = (ctx, chatId) => {
 		if (top.length > 0) {
 			ctx.replyWithMarkdown(
 				trueTrim(`
-					*🏁 А вот и победители:*
+					*🏁 Və burada qaliblər var:*
 
 					${top
 						.sort((a, b) => b.score - a.score)
 						.map((member, index) => `${["🏆", "🎖", "🏅"][index] || "🔸"} ${index + 1}. ${bold(member.firstName)}: ${numberWithSpaces(member.score)} ${pluralize(member.score, "очко", "очка", "очков")}`)
 						.join("\n")}
 
-					❤️ Канал автора, где иногда публикуются новые прикольные боты @FilteredInternet.
+					❤️ Bəzən yeni sərin botların dərc olunduğu müəllif kanalı @cguessgame.
 					🔄 /game - Еще разок?
 				`)
 			)
