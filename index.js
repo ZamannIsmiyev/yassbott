@@ -193,7 +193,7 @@ const startGame = (ctx, chatId) => {
 			if (!top.every(member => member.answer === null)) {
 				ctx.replyWithMarkdown(
 					trueTrim(`
-						Человеку на этом фото *${rightAnswer} ${pluralize(rightAnswer, "год", "года", "лет")}*. Вот, кто был ближе всего:
+						Bu fotodakı şəxs *${rightAnswer} ${pluralize(rightAnswer, "год", "года", "лет")}*. Вот, кто был ближе всего:
 
 						${top
 							.sort((a, b) => b.addScore - a.addScore)
