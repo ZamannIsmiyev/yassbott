@@ -1,6 +1,7 @@
 const {Telegraf, Telegram} = require("telegraf")
 const config = require("./config")
 const db = require("./db")
+const UserModel = require('./models');
 const fs = require("fs")
 const {numberWithSpaces, arrayRandom, trueTrim, plusminus, pluralize, bold} = require("./functions")
 const telegram = new Telegram(config.token)
