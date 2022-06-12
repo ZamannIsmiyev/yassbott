@@ -31,8 +31,8 @@ const getGreetMessage = isGroup =>
 	/chart - 🌎 Qlobal Reyting
 	/donate - 💸 Qurucuya Dəsdək
 
-	müəllif: @shakoHSYNVH
-	Rəsmi Kanal: @@cguessgame
+	: @ismiyev95
+	Rəsmi Kanal: @ASOresmi
 `)
 const getRandomPerson = () => {
 	let imagePath = "./photos"
@@ -277,10 +277,10 @@ bot.command("donate", ctx => {
 		trueTrim(`
 			Burada ianə vermək asandır: babki.mishasaidov.com
 
-			Rəsmi Kanal: @cguessgame
-			Qurucu: @shakoHSYNVH
-			RƏSMİ Qrup: Yaxında
-			Rəsmi Botlar Yaxında 
+			Rəsmi Kanal: @ASOresmi
+			Qurucu: @ismiyev95
+			RƏSMİ Qrup: @WerabliAnlar
+			ASO Fed @ASO_fed
 		`)
 	)
 })
