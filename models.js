@@ -86,7 +86,7 @@ const stopGame = (ctx, chatId) => {
 				trueTrim(`
 					*🏁 Yaxşı, mən oyunu bitirirəm.*
 
-					❤️ Bəzən yeni sərin botların dərc olunduğu Resmi Kanalı @WerabliAnlar.
+					❤️ Bəzən yeni sərin botların dərc olunduğu Resmi Kanalı @ASOresmi.
 					🔄 /game - Bir daha?
 				`)
 			)
@@ -252,10 +252,10 @@ bot.command("donate", ctx => {
 		trueTrim(`
 			Burada ianə vermək asandır: babki.mishasaidov.com
 
-			Rəsmi Kanal: @cguessgame
-			Qurucu: @shakoHSYNVH
-			RƏSMİ Qrup: Yaxında
-			Rəsmi Botlar Yaxında 
+			Rəsmi Kanal: @ASOresmi
+			Qurucu: @ismiyev95
+			RƏSMİ Qrup: @WerabliAnlar
+			Rəsmi Botlar ASOuserbott
 		`)
 	)
 })
@@ -289,7 +289,7 @@ bot.command("top", ctx => {
 						.map((member, index) => `${["🏆", "🎖", "🏅"][index] || "🔸"} ${index + 1}. ${bold(member.firstName)}: ${numberWithSpaces(member.score)} ${pluralize(member.score, "очко", "очка", "очков")}`)
 						.join("\n")}
 
-					❤️ Bəzən yeni sərin botların dərc olunduğu müəllif kanalı @cguessgame.
+					❤️ Bəzən yeni sərin botların dərc olunduğu müəllif kanalı @ASOresmi.
 					🔄 /game - Bir daha?
 				`)
 				)
