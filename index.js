@@ -104,7 +104,7 @@ const stopGame = (ctx, chatId) => {
 						.map((member, index) => `${["🏆", "🎖", "🏅"][index] || "🔸"} ${index + 1}. ${bold(member.firstName)}: ${numberWithSpaces(member.score)} ${pluralize(member.score, "очко", "очка", "очков")}`)
 						.join("\n")}
 
-					❤️ Bəzən yeni sərin botların dərc olunduğu müəllif kanalı @cguessgame.
+					❤️ Bəzən yeni sərin botların dərc olunduğu müəllif kanalı @asoresmi.
 					🔄 /game - Bir daha?
 				`)
 			)
@@ -113,7 +113,7 @@ const stopGame = (ctx, chatId) => {
 				trueTrim(`
 					*🏁 Yaxşı, mən oyunu bitirirəm.*
 
-					❤️ Bəzən yeni sərin botların dərc olunduğu müəllif kanalı @cguessgame.
+					❤️@ Bəzən yeni sərin botların nəşr olunduğu müəllif kanalı 
 					🔄 /game - Bir daha?
 				`)
 			)
