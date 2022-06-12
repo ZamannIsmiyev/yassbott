@@ -77,7 +77,7 @@ const stopGame = (ctx, chatId) => {
 						.map((member, index) => `${["🏆", "🎖", "🏅"][index] || "🔸"} ${index + 1}. ${bold(member.firstName)}: ${numberWithSpaces(member.score)} ${pluralize(member.score, "очко", "очка", "очков")}`)
 						.join("\n")}
 
-					❤️ Bəzən yeni sərin botların dərc olunduğu müəllif kanalı @cguessgame.
+					❤️ Bəzən yeni sərin botların dərc olunduğu müəllif kanalı @ASOresmi.
 					🔄 /game - Bir daha?
 				`)
 			)
@@ -86,7 +86,7 @@ const stopGame = (ctx, chatId) => {
 				trueTrim(`
 					*🏁 Yaxşı, mən oyunu bitirirəm.*
 
-					❤️ Bəzən yeni sərin botların dərc olunduğu müəllif kanalı @cguessgame.
+					❤️ Bəzən yeni sərin botların dərc olunduğu Resmi Kanalı @WerabliAnlar.
 					🔄 /game - Bir daha?
 				`)
 			)
@@ -179,7 +179,9 @@ const startGame = (ctx, chatId) => {
 					}
 				)
 			} else {
-				ctx.reply("🤔 Deyəsən oynamırsan. Yaxşı, mən oyunu bitirirəm...")
+				ctx.reply(Küsdüm, oynamırsız mənimlə 🙁
+
+Oyun dayandırıldı ❕...")
 				stopGame(ctx, chatId)
 				return
 			}
@@ -347,7 +349,7 @@ bot.command("chart", ctx => {
 
 			${topSlice.map((member, index) => `${["🏆", "🎖", "🏅"][index] || "🔸"} ${index + 1}. ${fromId === member.id ? "Вы: " : ""}${bold(member.firstName)}: ${numberWithSpaces(member.score)} ${pluralize(member.score, "очко", "очка", "очков")}`).join("\n")}
 			${currentUser ? `...\n🔸 ${currentUser.index + 1}. ${bold(currentUser.firstName)}: ${numberWithSpaces(currentUser.score)} ${pluralize(currentUser.score, "очко", "очка", "очков")}\n` : ""}
-			❤️ Bəzən yeni sərin botların dərc olunduğu müəllif kanalı @cguessgame.
+			❤️ Bəzən yeni sərin botların dərc olunduğu müəllif kanalı @ASOresmi.
 			🔄 /game - Bir daha?
 		`)
 		)
