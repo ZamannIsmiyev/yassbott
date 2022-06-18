@@ -314,7 +314,7 @@ bot.command("top", ctx => {
 						.map((member, index) => `${["🏆", "🎖", "🏅"][index] || "🔸"} ${index + 1}. ${bold(member.firstName)}: ${numberWithSpaces(member.score)} ${pluralize(member.score, "очко", "очка", "очков")}`)
 						.join("\n")}
 
-					❤️ Bəzən yeni sərin botların dərc olunduğu müəllif kanalı @cguessgame.
+					❤️ Bəzən yeni sərin botların dərc olunduğu müəllif kanalı @ASOresmi.
 					🔄 /game - Bir daha?
 				`)
 				)
