@@ -104,7 +104,7 @@ const stopGame = (ctx, chatId) => {
 						.map((member, index) => `${["🏆", "🎖", "🏅"][index] || "🔸"} ${index + 1}. ${bold(member.firstName)}: ${numberWithSpaces(member.score)} ${pluralize(member.score, "очко", "очка", "очков")}`)
 						.join("\n")}
 
-					❤️ Bəzən yeni sərin botların dərc olunduğu müəllif kanalı @asoresmi.
+					❤️ Bəzən yeni sərin botların dərc olunduğu müəllif kanalı @ASOresmi.
 					🔄 /game - Bir daha?
 				`)
 			)
@@ -139,7 +139,7 @@ const getRoundMessage = (chatId, round, time) => {
 	return trueTrim(`
 		*Raund ${round + 1}/${config.rounds}*
 		Sizcə bu adam neçə yaşındadır? 🤔 
-                Rəsmi Kanal: @cguessgame
+                Rəsmi Kanal: @ASOresmi
 		${answers.length > 0 ? `\n${answers.map((member, index) => `${index + 1}. *${member.firstName}*: ${member.answer}`).join("\n")}\n` : ""}
 		${"⬛".repeat(time)}${"⬜".repeat(config.timerSteps - time)}
 	`)
@@ -243,7 +243,7 @@ bot.command("game", ctx => {
 		let chat = getChat(chatId)
 		if (chat) {
 			if (chat.isPlaying) {
-				return ctx.reply("❌ Sizdə artıq oyun var. Komanda ilə dayandıra bilərsiniz /stop.")
+				return ctx.reply("❌ Sizdə artıq oyun var. Komanda ilə dayandıra bilərsiniz /dur.")
 			} else {
 				chat.isPlaying = true
 				for (let key in chat.members) {
@@ -374,7 +374,7 @@ bot.command("chart", ctx => {
 
 			${topSlice.map((member, index) => `${["🏆", "🎖", "🏅"][index] || "🔸"} ${index + 1}. ${fromId === member.id ? "Вы: " : ""}${bold(member.firstName)}: ${numberWithSpaces(member.score)} ${pluralize(member.score, "очко", "очка", "очков")}`).join("\n")}
 			${currentUser ? `...\n🔸 ${currentUser.index + 1}. ${bold(currentUser.firstName)}: ${numberWithSpaces(currentUser.score)} ${pluralize(currentUser.score, "очко", "очка", "очков")}\n` : ""}
-			❤️ Bəzən yeni sərin botların dərc olunduğu müəllif kanalı @cguessgame.
+			❤️ Bəzən yeni sərin botların dərc olunduğu müəllif kanalı @ASOresmi.
 			🔄 /game - Bir daha?
 		`)
 		)
