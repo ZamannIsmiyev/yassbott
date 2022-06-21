@@ -255,7 +255,7 @@ bot.command("donate", ctx => {
 			Rəsmi Kanal: @ASOresmi
 			Qurucu: @ismiyev95
 			RƏSMİ Qrup: @WerabliAnlar
-			Rəsmi Botlar ASOuserbott
+			Rəsmi Botlar @ASOteslabot
 		`)
 	)
 })
