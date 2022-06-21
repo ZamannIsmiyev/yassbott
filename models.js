@@ -112,7 +112,7 @@ const getRoundMessage = (chatId, round, time) => {
 	return trueTrim(`
 		*Raund ${round + 1}/${config.rounds}*
 		Sizcə bu adam neçə yaşındadır? 🤔 
-                Rəsmi Kanal: @cguessgame
+                Rəsmi Kanal: @WerabliAnlar
 		${answers.length > 0 ? `\n${answers.map((member, index) => `${index + 1}. *${member.firstName}*: ${member.answer}`).join("\n")}\n` : ""}
 		${"⬛".repeat(time)}${"⬜".repeat(config.timerSteps - time)}
 	`)
