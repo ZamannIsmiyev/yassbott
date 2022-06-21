@@ -113,7 +113,7 @@ const stopGame = (ctx, chatId) => {
 				trueTrim(`
 					*🏁 Yaxşı, mən oyunu bitirirəm.*
 
-					❤️@ Bəzən yeni sərin botların nəşr olunduğu müəllif kanalı 
+					❤️ Bəzən yeni sərin botların nəşr olunduğu müəllif kanalı @ASOresmi
 					🔄 /game - Bir daha?
 				`)
 			)
